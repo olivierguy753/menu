@@ -2,134 +2,104 @@
 
 {
 
-    width:670px;
+    height:200px;
 
-    margin:auto;
+    width:450px;
 
-    border:dashed red 15px;
+    margin:1em auto;
 
-    border-radius:15px;
+    border:solid;
 
-    box-shadow: 0 0 1px black, inset 0px 0px 5px black, 0 0 50px 50px white ;
+    border-radius:5px;
 
-    background:yellow;
+    box-shadow:1px 1px 3px gray;
 
-    text-align:center;
+    text-align:right;
 
-}
+    position:relative;
 
-a img 
+    white-space:nowrap;
 
-{
-
-    height:120px;
-
-    width:120px;
-
-    border:none;
-
-    vertical-align:top;
-
-    border-radius:10px;
+    overflow:hidden;
 
 }
 
-a 
+#galerie-menu a 
 
 {
-
-    border-radius:15px;
 
     display:inline-block;
 
-    transform: scale(1.1) rotate(45deg) ;
+    width:30px;
+
+    height:300px;
 
     overflow:hidden;
 
     position:relative;
 
-    box-shadow: 0 0 15px gray;
-
-    border:solid white;
-
-    background:white;
-
-    transition:1s;
-
     z-index:1;
 
-    height:120px;
-
-    width:120px;
+    vertical-align:top;
 
 }
 
-a:hover,a:focus 
+#galerie-menu a:hover, #galerie-menu a:focus 
 
 {
 
-    transform: scale(2.07) rotate(0deg) ;
-
-    transform-origin:top center;
-
-    z-index:5;
-
-    background:white;
-
-    transition:1s;
+    width:400px;
 
 }
 
-a:before 
+#galerie-menu a:first-child 
+
+{
+
+    width:400px;
+
+    position:absolute;
+
+    top:0;
+
+    left:0;
+
+    z-index:0;
+
+}
+#galerie-menu a:before 
 
 {
 
     content:attr(title);
 
+    text-align:center;
+
+    height:30px;
+
+    width:300px;
+
     position:absolute;
 
-    transform:rotate(-45deg);
+    bottom:0;
 
-    transform-origin: 130px 64px;
-
-    border:solid;
-
-    color:white;
-
-    display:block;
-
-    width:160px;
-
-    text-align:center;border-radius:15px;
+    left:0;
 
     background:rgba(0,0,0,0.3);
 
-}
+    border:1px solid gray;
 
+    padding-right:100px;
 
-/* En option : */
+    font-size:30px;
 
-html 
+    color:white;
 
-{
+    line-height:22px;
 
-    display:table;
+    transform:rotate(-90deg);
 
-    height:100%;
-
-    width:100%;
-
-    background:#00664E
+    transform-origin:17px;
 
 }
 
-
-body 
-
-{
-
-    display:table-cell;
-
-    vertical-align:middle;
-
-}
